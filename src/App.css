@@ -1,0 +1,42 @@
+.toggle-switch, .toggle-switch .toggle-knob {
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.toggle-switch {
+    height: 30px;
+    width: 55px;
+    display: inline-block;
+    background-color: #dedede;
+    margin: 2px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.toggle-switch .toggle-knob {
+    width: 28px;
+    height: 26px;
+    display: flex;
+    background-color: #ffffff;
+    border: solid 1px rgba(126, 126, 126, 0.07);
+    border-radius: 26px;
+    box-shadow: 1px 1px 9px -3px rgba(4, 4, 4, 0.08), 1px 2px 6px -2px rgba(0, 0, 0, 0.01);
+}
+
+.toggle-knob {
+    margin: 2px;
+}
+
+.toggle-switch.active {
+    background-color: #4cd964;
+    border: solid 1px transparent;
+}
+
+.toggle-switch.active .toggle-knob {
+    margin: 1px;
+    margin-left: 24px;
+
+}

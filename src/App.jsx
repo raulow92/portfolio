@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Linkedin from "./components/linkedin";
+import Github from "./components/Github";
+import Mail from "./components/Mail";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -21,40 +24,53 @@ function App() {
     }, [theme]);
 
     const handleThemeSwitch = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
+      const toggler = document.querySelector('.toggle-switch');
+      toggler.classList.toggle('active');
+      setTheme(theme === "dark" ? "light" : "dark");
     };
 
     return (
         <main className="grid grid-cols-3 mx-auto gap-3 sm:gap-4 xl:px-20 md:grid-cols-5 md:gap-4 container">
-            <div className="flex justify-center order-1 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
-                <p className="">CV</p>
-            </div>
-            <div className="flex justify-center order-2 md:order-3 items-center rounded-[2rem] font-medium bg-blue-600 dark:bg-blue-950 aspect-square">
-                <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 448 512"
-                    className="text-3xl md:text-6xl text-neutral-100"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-                </svg>
-            </div>
+            <a
+                href="https://drive.google.com/file/d/1aU_r1Re6avzh7pUxHB39tNSzC4vFuJpk/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center order-1 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square"
+            >
+                <p className="font-extrabold text-lg md:text-4xl">CV</p>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/raulow/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center order-2 md:order-3 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 dark:text-white aspect-square"
+            >
+                <Linkedin />
+            </a>
             <button
-                className="flex justify-center order-3 md:order-5 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square"
+                className="flex justify-center items-center order-3 md:order-5 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-slate-900 dark:text-white aspect-square"
                 onClick={handleThemeSwitch}
             >
-                {theme === "dark" ? "Dark" : "Light"}
+                <span className="toggle-switch md:scale-125">
+                    <span className="toggle-knob"></span>
+                </span>
             </button>
-            <div className="flex justify-center order-4 md:order-2 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
-                <p className="">Mail</p>
-            </div>
-            <div className="flex justify-center order-5 md:order-3 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
-                <p className="">Github</p>
-            </div>
+            <a
+                href="mailto:raulou92@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center order-4 md:order-2 items-center rounded-[2rem] font-medium bg-sky-300 dark:bg-neutral-900 text-lg md:text-2xl text-center aspect-square"
+            >
+                <Mail />
+            </a>
+            <a
+                href="https://github.com/raulow92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center order-5 md:order-3 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square"
+            >
+                <Github />
+            </a>
             <div className="flex justify-center order-6 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
                 <p className="">Ubicación</p>
             </div>
