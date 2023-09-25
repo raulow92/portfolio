@@ -3,6 +3,7 @@ import "./App.css";
 import Linkedin from "./components/linkedin";
 import Github from "./components/Github";
 import Mail from "./components/Mail";
+import Skills from "./components/Skills";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -24,9 +25,9 @@ function App() {
     }, [theme]);
 
     const handleThemeSwitch = () => {
-      const toggler = document.querySelector('.toggle-switch');
-      toggler.classList.toggle('active');
-      setTheme(theme === "dark" ? "light" : "dark");
+        const toggler = document.querySelector(".toggle-switch");
+        toggler.classList.toggle("active");
+        setTheme(theme === "dark" ? "light" : "dark");
     };
 
     return (
@@ -82,10 +83,7 @@ function App() {
                     Full Stack Developer & Industrial Designer
                 </p>
             </div>
-
-            <div className="flex justify-center order-8 md:order-10 col-span-2 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white">
-                <p className="">Skills</p>
-            </div>
+            <Skills />
             <div className="flex justify-center order-9 md:order-8 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
                 <p className="">Proyectos</p>
             </div>
