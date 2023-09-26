@@ -1,19 +1,15 @@
+import { HiOutlineMail } from "react-icons/hi"; 
+
 const Mail = () => (
-    <svg
-        className="text-4xl md:text-7xl text-[#f8f8f8]"
-        width="1em"
-        height="1em"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        stroke="currentColor"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+    <a
+        href="mailto:raulou92@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col relative justify-center order-4 md:order-2 items-center rounded-[2rem] bg-[#ececec] dark:bg-neutral-900 text-center text-neutral-600 dark:text-neutral-300 aspect-square"
     >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-        <path d="M3 7l9 6l9 -6"></path>
-    </svg>
+        <HiOutlineMail className="text-4xl lg:text-6xl mb-3"/>
+        <p className="text-sm lg:text-lg absolute bottom-3 lg:bottom-5">Mail</p>
+    </a>
 );
 
 export default Mail;

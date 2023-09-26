@@ -1,16 +1,15 @@
+import { BiLogoLinkedin } from "react-icons/bi";
+
 const Linkedin = () => (
-        <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
-            viewBox="0 0 448 512"
-            className="text-3xl md:text-7xl text-blue-600 dark:text-neutral-300"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-        </svg>
+    <a
+        href="https://www.linkedin.com/in/raulow/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col relative justify-center order-2 md:order-3 items-center rounded-[2rem] bg-[#ececec] dark:bg-neutral-900 text-center text-neutral-600 dark:text-neutral-300 aspect-square"
+    >
+        <BiLogoLinkedin className="text-4xl lg:text-6xl mb-3"/>
+        <p className="text-sm lg:text-lg absolute bottom-3 lg:bottom-5">LinkedIn</p>
+    </a>
 );
 
 export default Linkedin;

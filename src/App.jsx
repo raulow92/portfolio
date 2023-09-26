@@ -4,6 +4,7 @@ import Linkedin from "./components/linkedin";
 import Github from "./components/Github";
 import Mail from "./components/Mail";
 import Skills from "./components/Skills";
+import Curriculum from "./components/Curriculum";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -32,22 +33,10 @@ function App() {
 
     return (
         <main className="grid grid-cols-3 mx-auto gap-3 sm:gap-4 xl:px-20 md:grid-cols-5 md:gap-4 container">
-            <a
-                href="https://drive.google.com/file/d/1aU_r1Re6avzh7pUxHB39tNSzC4vFuJpk/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center order-1 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square"
-            >
-                <p className="font-extrabold text-lg md:text-4xl">CV</p>
-            </a>
-            <a
-                href="https://www.linkedin.com/in/raulow/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center order-2 md:order-3 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 dark:text-white aspect-square"
-            >
-                <Linkedin />
-            </a>
+            <Curriculum />
+
+            <Linkedin />
+
             <button
                 className="flex justify-center items-center order-3 md:order-5 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-slate-900 dark:text-white aspect-square"
                 onClick={handleThemeSwitch}
@@ -56,22 +45,10 @@ function App() {
                     <span className="toggle-knob"></span>
                 </span>
             </button>
-            <a
-                href="mailto:raulou92@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center order-4 md:order-2 items-center rounded-[2rem] font-medium bg-sky-300 dark:bg-neutral-900 text-lg md:text-2xl text-center aspect-square"
-            >
-                <Mail />
-            </a>
-            <a
-                href="https://github.com/raulow92"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center order-5 md:order-3 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square"
-            >
-                <Github />
-            </a>
+
+            <Mail />
+
+            <Github />
             <div className="flex justify-center order-6 items-center rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-center text-slate-900 dark:text-white aspect-square">
                 <p className="">Ubicación</p>
             </div>
