@@ -31,7 +31,7 @@ const Toggler = () => {
             className="flex justify-center items-center order-3 md:order-5 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-slate-900 dark:text-white aspect-square"
             onClick={handleThemeSwitch}
         >
-            <span className="toggle-switch md:scale-125">
+            <span className="toggle-switch lg:scale-125">
                 <span className="toggle-knob"></span>
             </span>
         </button>
