@@ -35,11 +35,11 @@ const Nombre = () => {
             </div>
             <h1
                 onClick={handleClick}
-                className="font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl bg-clip-text bg-gradient-to-b dark:from-purple-300 dark:to-purple-800 from-purple-800 to-blue-500 whitespace-nowrap select-none"
+                className="font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl 2xl:text-9xl bg-clip-text bg-gradient-to-b dark:from-purple-300 dark:to-purple-800 from-purple-800 to-blue-500 whitespace-nowrap select-none"
             >
                 Raúl Low
             </h1>
-            <p className="font-medium text-sm lg:text-lg text-gray-800 dark:text-gray-200 select-none">
+            <p className="font-medium text-sm lg:text-lg 2xl:text-xl text-gray-800 dark:text-gray-200 select-none">
                 Full Stack Developer & Industrial Designer
             </p>
         </div>
