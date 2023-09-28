@@ -9,6 +9,10 @@ const Nombre = () => {
         counter++
         if (counter == 5) {
             setIsExploding(true)
+            e.currentTarget.classList.remove('from-purple-800')
+            e.currentTarget.classList.remove('to-blue-500')
+            e.currentTarget.classList.remove('dark:from-purple-300')
+            e.currentTarget.classList.remove('dark:to-purple-800')
             e.currentTarget.classList.add('from-[#ffd24e]')
             e.currentTarget.classList.add('to-[#b96205]')
             e.currentTarget.classList.add('dark:from-[#ffd24e]')
