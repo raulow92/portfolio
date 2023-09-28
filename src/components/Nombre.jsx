@@ -25,6 +25,7 @@ const Nombre = () => {
     return (
         <motion.div 
         whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
         className="flex flex-col order-7 justify-center col-span-3 bg-[#ececec] dark:bg-neutral-900 rounded-[2rem] p-8 md:p-0 text-center hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out cursor-pointer">
             <div className="absolute w-full h-full z-20 left-0 flex justify-center items-center pointer-events-none">
