@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Toggler = () => {
     const [theme, setTheme] = useState("light");
@@ -27,14 +28,16 @@ const Toggler = () => {
     };
 
     return (
-        <button
-            className="flex justify-center items-center order-3 md:order-5 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-slate-900 dark:text-white aspect-square"
+        <motion.button
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            className="flex justify-center items-center order-3 md:order-5 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-lg md:text-2xl text-slate-900 dark:text-white hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out aspect-square"
             onClick={handleThemeSwitch}
         >
             <span className="toggle-switch lg:scale-125">
                 <span className="toggle-knob"></span>
             </span>
-        </button>
+        </motion.button>
     );
 };
 export default Toggler;

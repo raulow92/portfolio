@@ -18,7 +18,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 const Skills = () => {
     return (
-        <div className="grid grid-cols-4 place-content-center place-items-center justify-center gap-2 md:gap-4 order-8 md:order-10 col-span-2 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-xl lg:text-4xl text-neutral-600 dark:text-neutral-300 px-6 md:px-8">
+        <div className="grid grid-cols-4 place-content-center place-items-center justify-center gap-2 md:gap-4 order-8 md:order-10 col-span-2 rounded-[2rem] font-medium bg-[#ececec] dark:bg-neutral-900 text-xl lg:text-4xl text-neutral-600 dark:text-neutral-300 px-6 md:px-8 hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out">
             <Tooltip content="HTML" style="light" animation="duration-500" className="rounded-[2rem]">
                 <SiHtml5 className="mt-1"/>
             </Tooltip>

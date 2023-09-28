@@ -1,5 +1,6 @@
-import ConfettiExplosion from "react-confetti-explosion";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import ConfettiExplosion from "react-confetti-explosion";
 
 const Nombre = () => {
     const [isExploding, setIsExploding] = useState(false);
@@ -22,7 +23,10 @@ const Nombre = () => {
     };
 
     return (
-        <div className="flex flex-col order-7 justify-center col-span-3 bg-[#ececec] dark:bg-neutral-900 rounded-[2rem] p-8 md:p-0 text-center">
+        <motion.div 
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        className="flex flex-col order-7 justify-center col-span-3 bg-[#ececec] dark:bg-neutral-900 rounded-[2rem] p-8 md:p-0 text-center hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out cursor-pointer">
             <div className="absolute w-full h-full z-20 left-0 flex justify-center items-center pointer-events-none">
                 {isExploding && (
                     <ConfettiExplosion
@@ -42,7 +46,7 @@ const Nombre = () => {
             <p className="font-medium text-sm lg:text-lg 2xl:text-xl text-gray-800 dark:text-gray-200 select-none">
                 Full Stack Developer & Industrial Designer
             </p>
-        </div>
+        </motion.div>
     );
 };
 
