@@ -1,5 +1,5 @@
 import "./App.css";
-import Linkedin from "./components/linkedin";
+import Linkedin from "./components/Linkedin";
 import Github from "./components/Github";
 import Mail from "./components/Mail";
 import Skills from "./components/Skills";
