@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CommonCard = ({ customeClassName, url, titulo, icon: IconComponent }) => {
 
-    const defaultClassName = "flex flex-col relative justify-center items-center rounded-[2rem] bg-[#ececec]  dark:bg-neutral-900 hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out text-neutral-600 dark:text-neutral-300 text-center aspect-square"
+    const defaultClassName = "flex flex-col relative justify-center items-center rounded-[2rem] bg-[#ececec]  dark:bg-neutral-900 hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out text-neutral-600 dark:text-neutral-300 text-center"
 
     return (
     <motion.a

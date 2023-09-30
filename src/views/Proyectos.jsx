@@ -3,19 +3,20 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Toggler from "../components/Toggler";
 import CommonCard from "../components/CommonCard";
-import Nombre from "../components/Nombre";
+import { SiGithub } from "react-icons/si";
 
 const Proyectos = () => {
     const navigate = useNavigate();
     const handleClick = () => navigate("/");
 
     return (
-        <motion.main 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, type: "spring" }}
-        exit={{ x: "-100vw", opacity: 1}}
-            className="grid grid-cols-3 mx-auto gap-3 sm:gap-4 xl:px-20 md:grid-cols-5 md:gap-4 container">
+        <motion.main
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, type: "spring" }}
+            exit={{ x: "-100vw", opacity: 1 }}
+            className="grid grid-cols-3 mx-auto gap-3 sm:gap-4 xl:px-20 md:grid-cols-5 md:gap-4 container"
+        >
             <motion.a
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -27,65 +28,42 @@ const Proyectos = () => {
                 <FaArrowLeft className="text-4xl lg:text-6xl 2xl:text-7xl" />
             </motion.a>
             <CommonCard
-                customeClassName=""
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
+                customeClassName="order-2 md:order-6 aspect-square"
+                titulo="GitHub"
+                icon={SiGithub}
+                url="https://github.com/raulow92"
+            />
+            <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="flex flex-col order-4 justify-center col-span-3 bg-[#ececec] dark:bg-neutral-900 rounded-[2rem] p-8 md:p-0 text-center hover:bg-neutral-200 hover:dark:bg-neutral-800 transition-colors duration-300 ease-in-out cursor-pointer"
+            >
+                <div className="absolute w-full h-full z-20 left-0 flex justify-center items-center pointer-events-none"></div>
+                <h1 className="font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl 2xl:text-9xl bg-clip-text bg-gradient-to-b dark:from-purple-300 dark:to-purple-800 from-purple-800 to-blue-500 whitespace-nowrap select-none">
+                    Proyectos
+                </h1>
+                <p className="font-medium text-sm lg:text-lg 2xl:text-xl text-gray-800 dark:text-gray-200 select-none">
+                    Full Stack Developer & Industrial Designer
+                </p>
+            </motion.div>
+            <CommonCard
+                customeClassName="order-7 col-span-3"
+                titulo="GitHub"
+                icon={SiGithub}
+                url="https://github.com/raulow92"
             />
             <CommonCard
-                customeClassName=""
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
+                customeClassName="order-7 col-span-3"
+                titulo="GitHub"
+                icon={SiGithub}
+                url="https://github.com/raulow92"
             />
             <CommonCard
-                customeClassName=""
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <Nombre />
-            <CommonCard
-                customeClassName=""
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
-            />
-            <CommonCard
-                customeClassName="order-7"
-                titulo="LinkedIn"
-                icon={FaArrowLeft}
-                url="https://www.linkedin.com/in/raulow/"
+                customeClassName="order-7 col-span-3"
+                titulo="GitHub"
+                icon={SiGithub}
+                url="https://github.com/raulow92"
             />
             <Toggler />
         </motion.main>
