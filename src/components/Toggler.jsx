@@ -1,16 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { motion } from "framer-motion";
+import Context from "../Context";
 
 const Toggler = () => {
-    const [theme, setTheme] = useState("light");
-
-    useEffect(() => {
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
-    }, []);
+    const {theme, setTheme} = useContext(Context);
 
     useEffect(() => {
         const toggler = document.querySelector(".toggle-switch");

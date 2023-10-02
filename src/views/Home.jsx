@@ -13,6 +13,7 @@ import { SiGithub } from "react-icons/si";
 import { TbMapPin } from "react-icons/tb";
 
 const Home = () => {
+
     return (
         <motion.main
             initial={{ x: "100vw", opacity: 1 }}
