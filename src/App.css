@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .toggle-switch, .toggle-switch .toggle-knob {
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;

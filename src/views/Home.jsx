@@ -18,7 +18,7 @@ const Home = () => {
         <motion.main
             initial={{ x: "100vw", opacity: 1 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, type: "spring" }}
+            transition={{ duration: 1, delay: 0.25, type: "spring" }}
             exit={{ opacity: 0 }}
             className="grid grid-cols-3 mx-auto gap-3 sm:gap-4 xl:px-20 md:grid-cols-5 md:gap-4 container"
         >
