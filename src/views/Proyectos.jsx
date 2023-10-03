@@ -5,6 +5,10 @@ import { SiGithub } from "react-icons/si";
 import ProyectosTitulo from "../components/ProyectosTitulo";
 import Flecha from "../components/Flecha";
 import SipoCard from "../components/SipoCard";
+import PokeCard from "../components/PokeCard";
+import MusicCard from "../components/MusicCard";
+import GameBoyCard from "../components/GameBoyCard";
+import MammaMiaCard from "../components/MammaMiaCard";
 
 const Proyectos = () => {
 
@@ -25,32 +29,11 @@ const Proyectos = () => {
             />
             <ProyectosTitulo />
             <SipoCard />
-
-            <CommonCard
-                customeClassName="order-8 aspect-square"
-                titulo="Mamma Mia"
-                icon={SiGithub}
-                url=""
-            />
-            <CommonCard
-                customeClassName="order-9 md:order-10 col-span-2"
-                titulo="Pokedex"
-                icon={SiGithub}
-                url=""
-            />
-            <CommonCard
-                customeClassName="order-10 md:order-11 col-span-2"
-                titulo="Music App"
-                icon={SiGithub}
-                url=""
-            />
+            <MammaMiaCard />
+            <PokeCard />
+            <MusicCard />
             <Toggler />
-            <CommonCard
-                customeClassName="order-11 md:order-9 aspect-square"
-                titulo="Game Boy"
-                icon={SiGithub}
-                url=""
-            />
+            <GameBoyCard />
         </motion.main>
     );
 };
